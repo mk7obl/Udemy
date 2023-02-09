@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "u1uLMVsHA+oQU6fNkrY5VFOuSSWXwZmbGkzggvxnCnZXJ60nEIqLt+u4Tu6Apk8SfoBkwvKkRiMyA1fjWebu1Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Udemy\\ASP .NET\\RestaurantAPI\\RestaurantAPI\\RestaurantAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mariu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
