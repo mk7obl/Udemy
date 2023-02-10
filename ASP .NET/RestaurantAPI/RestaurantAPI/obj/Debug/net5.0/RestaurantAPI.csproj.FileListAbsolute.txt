@@ -5,7 +5,6 @@ C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\bin
 C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\RestaurantAPI.runtimeconfig.json
 C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\RestaurantAPI.runtimeconfig.dev.json
 C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\RestaurantAPI.dll
-C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\ref\RestaurantAPI.dll
 C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\RestaurantAPI.pdb
 C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\RestaurantAPI.csproj.AssemblyReference.cache
 C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\RestaurantAPI.GeneratedMSBuildEditorConfig.editorconfig
@@ -20,3 +19,9 @@ C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj
 C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\ref\RestaurantAPI.dll
 C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\RestaurantAPI.pdb
 C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\RestaurantAPI.genruntimeconfig.cache
+C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\staticwebassets\RestaurantAPI.StaticWebAssets.Pack.cache
+C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\staticwebassets\msbuild.RestaurantAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\staticwebassets\msbuild.build.RestaurantAPI.props
+C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.RestaurantAPI.props
+C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.RestaurantAPI.props
+C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\refint\RestaurantAPI.dll

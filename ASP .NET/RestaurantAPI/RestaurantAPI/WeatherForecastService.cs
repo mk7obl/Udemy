@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace RestaurantAPI
 {
-    public class WeatherForecastService
+    public class WeatherForecastService : IWeatherForecastService
     {
 
         private static readonly string[] Summaries = new[]
-{
+        {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
@@ -25,5 +25,5 @@ namespace RestaurantAPI
             })
             .ToArray();
         }
-}
+    }
 }
