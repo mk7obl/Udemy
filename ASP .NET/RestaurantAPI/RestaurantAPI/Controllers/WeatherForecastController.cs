@@ -27,5 +27,13 @@ namespace RestaurantAPI.Controllers
             var results = _service.Get();
             return results;
         }
+
+        [HttpGet]
+        [Route("currentDay")]
+        public IEnumerable<WeatherForecast> Get2()
+        {
+            var result = _service.Get();
+            return result;
+        }
     }
 }
