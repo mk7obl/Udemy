@@ -49,10 +49,13 @@ namespace RestaurantAPI.Controllers
         [HttpPost]
         [Route("generate")]
 
-        public ActionResult<string> Generate([FromBody]int results, [FromBody]int minRange, [FromBody]int maxRange )
+        public ActionResult<string> Generate([FromBody]int results)
         {
             if (results < 0 || maxRange > minRange)
             {
+                // , [FromBody]int minRange, [FromBody]int maxRange
+                // tutaj musze jakis obiekt dac, ktory przyjmie te wartosci z linijki wyzej,
+                //nie moge dac 3 argumentow FromBody dla jednej akcji
                 return BadRequest(400);
             }
 
