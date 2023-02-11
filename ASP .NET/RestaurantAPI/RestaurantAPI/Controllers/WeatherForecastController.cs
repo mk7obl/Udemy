@@ -24,7 +24,7 @@ namespace RestaurantAPI.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            var results = _service.Get();
+            var results = _service.Get(5,5,5);
             return results;
         }
 
@@ -32,7 +32,7 @@ namespace RestaurantAPI.Controllers
 
         public IEnumerable<WeatherForecast> Get2([FromQuery] int take, [FromRoute] int max)
         {
-            var result = _service.Get();
+            var result = _service.Get(5,5,5);
             return result;
         }
 
@@ -45,5 +45,23 @@ namespace RestaurantAPI.Controllers
 
             return NotFound($"Hello {name}");
         }
+
+        [HttpPost]
+        [Route("generate")]
+
+        public ActionResult<string> Generate([FromBody]int results, [FromBody]int minRange, [FromBody]int maxRange )
+        {
+            if (results < 0 || maxRange > minRange)
+            {
+                return BadRequest(400);
+            }
+
+            else
+            {
+                return Ok(Get());
+            }
+        }
+        
+        
     }
 }
