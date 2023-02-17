@@ -24,15 +24,14 @@ namespace RestaurantAPI.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            var results = _service.Get(5,5,5);
+            var results = _service.Get(5, 5, 5);
             return results;
         }
 
         [HttpGet("currentDay/{max}")]
-
         public IEnumerable<WeatherForecast> Get2([FromQuery] int take, [FromRoute] int max)
         {
-            var result = _service.Get(5,5,5);
+            var result = _service.Get(5, 5, 5);
             return result;
         }
 
@@ -46,25 +45,28 @@ namespace RestaurantAPI.Controllers
             return NotFound($"Hello {name}");
         }
 
-        [HttpPost]
-        [Route("generate")]
+    //    [Route("generate/{quantity}")]
 
-        public ActionResult<string> Generate([FromBody]int results)
+        [HttpPost("generate/{quantity}")]
+        public ActionResult<string> Generate([FromRoute] int quantity, [FromBody]WeatherForecast range)
         {
-            if (results < 0 || maxRange > minRange)
+
+            int min = range.minT;
+            int max = range.maxT;
+
+            if (quantity > 0 && min<=max)
             {
-                // , [FromBody]int minRange, [FromBody]int maxRange
-                // tutaj musze jakis obiekt dac, ktory przyjmie te wartosci z linijki wyzej,
-                //nie moge dac 3 argumentow FromBody dla jednej akcji
-                return BadRequest(400);
+                var result = _service;
+                _service.Get(quantity, min, max);
+
+                return Ok(200);
             }
 
             else
-            {
-                return Ok(Get());
-            }
+                return BadRequest(400);
+
         }
-        
-        
+
+
     }
 }
