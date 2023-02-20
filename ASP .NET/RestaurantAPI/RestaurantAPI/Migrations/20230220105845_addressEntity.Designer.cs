@@ -85,10 +85,10 @@ namespace RestaurantAPI.Migrations
                     b.Property<string>("Category")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ConctactEmail")
+                    b.Property<string>("ContactEmail")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ConctactNumber")
+                    b.Property<string>("ContactNumber")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")

@@ -31,8 +31,8 @@ namespace RestaurantAPI.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Category = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     HasDelivery = table.Column<bool>(type: "bit", nullable: false),
-                    ConctactEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ConctactNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ContactEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ContactNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AddressId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

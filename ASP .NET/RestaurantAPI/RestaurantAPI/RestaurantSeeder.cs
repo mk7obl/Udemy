@@ -37,7 +37,7 @@ namespace RestaurantAPI
                     Name = "KFC",
                     Category = "Fast Food",
                     Description = "Kentucky Fried Chicken, najlepszy sosik pozdro",
-                    ConctactEmail = "contact@kfc.pl",
+                    ContactEmail = "contact@kfc.pl",
                     HasDelivery = true,
 
                     Dishes = new List<Dish>
@@ -68,7 +68,7 @@ namespace RestaurantAPI
                     Name = "McDonald's",
                     Category = "Fast Food",
                     Description = "mamy calkiem dobre frytki",
-                    ConctactEmail = "contact@mak.pl",
+                    ContactEmail = "contact@mak.pl",
                     HasDelivery = true,
                     Dishes = new List<Dish>
                     {
