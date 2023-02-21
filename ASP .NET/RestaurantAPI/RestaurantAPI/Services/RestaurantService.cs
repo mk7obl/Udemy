@@ -10,14 +10,22 @@ using System.Threading.Tasks;
 
 namespace RestaurantAPI.Services
 {
-    public class RestaurantService
+
+    public interface IRestaurantService
+    {
+        RestaurantDto GetById(int id);
+        IEnumerable <RestaurantDto> GetAll();
+        int Create(CreateRestaurantDto dto);
+    }
+    public class RestaurantService : IRestaurantService
     {
         private readonly RestaurantDbContext _dbContext;
         private readonly IMapper _mapper;
 
-        public RestaurantService(RestaurantDbContext dbContext)
+        public RestaurantService(RestaurantDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
+            _mapper= mapper;
         }
         public RestaurantDto GetById (int id)
         {
@@ -43,6 +51,15 @@ namespace RestaurantAPI.Services
 
             var restaurantsDtos = _mapper.Map<List<RestaurantDto>>(restaurants);
             return restaurantsDtos;
+        }
+
+        public int Create(CreateRestaurantDto dto)
+        {
+            var restaurant = _mapper.Map<Restaurant>(dto);
+            _dbContext.Restaurants.Add(restaurant);
+            _dbContext.SaveChanges();
+
+            return restaurant.Id;
         }
     }
 }
