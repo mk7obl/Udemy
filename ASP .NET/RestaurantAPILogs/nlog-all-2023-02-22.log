@@ -192,3 +192,299 @@
 2023-02-22 16:16:32.5416||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE https://localhost:5001/api/restaurant/23123 application/json 118 - 404 0 - 428.7514ms 
 2023-02-22 16:16:32.5416||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOKSV1D36AI", Request id "0HMOKSV1D36AI:00000002": started reading request body. 
 2023-02-22 16:16:32.5416||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOKSV1D36AI", Request id "0HMOKSV1D36AI:00000002": done reading request body. 
+2023-02-22 20:18:53.0585||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-02-22 20:19:01.0744||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 1D7128842A372518BC9372438520BD829EB0D5F5) 
+2023-02-22 20:19:01.3151||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-02-22 20:19:01.3227||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-02-22 20:19:01.3227||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly RestaurantAPI 
+2023-02-22 20:19:01.3227||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-02-22 20:19:01.3227||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-02-22 20:19:01.3227||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 20:19:01.3227||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 20:19:01.3406||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI 
+2023-02-22 20:19:01.3406||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-02-22 20:19:01.4106||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VU" accepted. 
+2023-02-22 20:19:01.4106||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VT" accepted. 
+2023-02-22 20:19:01.4106||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VU" started. 
+2023-02-22 20:19:01.4106||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VT" started. 
+2023-02-22 20:19:02.7086||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" accepted. 
+2023-02-22 20:19:02.7354||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" started. 
+2023-02-22 20:19:03.0356||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection "0HMOL16JPP2VV" established using the following protocol: Tls12 
+2023-02-22 20:19:03.2731||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE 
+2023-02-22 20:19:03.2801||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0 
+2023-02-22 20:19:03.2801||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" received SETTINGS frame for stream ID 0 with length 30 and flags NONE 
+2023-02-22 20:19:03.2801||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK 
+2023-02-22 20:19:03.2801||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0 
+2023-02-22 20:19:03.2801||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" received HEADERS frame for stream ID 1 with length 471 and flags END_STREAM, END_HEADERS, PRIORITY 
+2023-02-22 20:19:03.3960||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" received SETTINGS frame for stream ID 0 with length 0 and flags ACK 
+2023-02-22 20:19:03.4294||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/weatherforecast - - 
+2023-02-22 20:19:03.5248||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-02-22 20:19:03.5248||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-02-22 20:19:03.6118||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/weatherforecast' 
+2023-02-22 20:19:03.6118||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-02-22 20:19:03.6576||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" sending HEADERS frame for stream ID 1 with length 45 and flags END_STREAM, END_HEADERS 
+2023-02-22 20:19:03.6576||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 404 0 - 235.2590ms 
+2023-02-22 20:19:06.5957||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL16JPP2VV" received FIN. 
+2023-02-22 20:19:06.5957||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" is closed. The last processed stream ID was 1. 
+2023-02-22 20:19:06.5957||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL16JPP2VV" sending FIN because: "The client closed the connection." 
+2023-02-22 20:19:06.6129||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VV" stopped. 
+2023-02-22 20:19:09.5343||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP300" accepted. 
+2023-02-22 20:19:09.5343||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP300" started. 
+2023-02-22 20:19:09.5343||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301" accepted. 
+2023-02-22 20:19:09.5343||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301" started. 
+2023-02-22 20:19:09.5434||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL16JPP300" received FIN. 
+2023-02-22 20:19:09.5434||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection "0HMOL16JPP301" established using the following protocol: Tls12 
+2023-02-22 20:19:09.6082||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:5001/api/restaurant/ application/json 118 
+2023-02-22 20:19:09.6082||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-02-22 20:19:09.6082||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/restaurant/' 
+2023-02-22 20:19:09.6230||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' with route pattern 'api/restaurant' is valid for the request path '/api/restaurant/' 
+2023-02-22 20:19:09.6230||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' 
+2023-02-22 20:19:09.6230||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' 
+2023-02-22 20:19:09.6429||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2023-02-22 20:19:09.6599||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|182_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-02-22 20:19:09.6934||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Restaurant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RestaurantAPI.Models.RestaurantDto]] GetAll() on controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI). 
+2023-02-22 20:19:10.1567||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP300" stopped. 
+2023-02-22 20:19:10.1567||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL16JPP300" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-02-22 20:19:10.1567||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-02-22 20:19:10.1567||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-02-22 20:19:10.1567||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-02-22 20:19:10.1567||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-02-22 20:19:10.1567||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2023-02-22 20:19:10.1567||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-02-22 20:19:10.6110||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-02-22 20:19:10.6110||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:10.6110||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:10.6241||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI) - Validation state: Valid 
+2023-02-22 20:19:11.2943||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 664.3545ms. 
+2023-02-22 20:19:11.2943||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:11.2943||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:11.2943||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-02-22 20:19:11.2943||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-02-22 20:19:11.3103||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-02-22 20:19:11.3103||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-02-22 20:19:11.3103||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-02-22 20:19:11.3103||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2023-02-22 20:19:11.3103||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantAPI.Models.RestaurantDto, RestaurantAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-02-22 20:19:11.4617||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2023-02-22 20:19:11.4617||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2023-02-22 20:19:11.4617||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VT" stopped. 
+2023-02-22 20:19:11.4617||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP2VU" stopped. 
+2023-02-22 20:19:11.4617||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL16JPP2VU" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-02-22 20:19:11.4617||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL16JPP2VT" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-02-22 20:19:11.4617||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-02-22 20:19:11.4806||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI) in 1304.5484ms 
+2023-02-22 20:19:11.4806||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' 
+2023-02-22 20:19:11.4806||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301" completed keep alive response. 
+2023-02-22 20:19:11.4806||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:5001/api/restaurant/ application/json 118 - 200 - application/json;+charset=utf-8 1885.2414ms 
+2023-02-22 20:19:11.4806||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301", Request id "0HMOL16JPP301:00000002": started reading request body. 
+2023-02-22 20:19:11.4806||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301", Request id "0HMOL16JPP301:00000002": done reading request body. 
+2023-02-22 20:19:26.8377||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:5001/api/restaurant/3 application/json 118 
+2023-02-22 20:19:26.8377||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-02-22 20:19:26.8396||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/restaurant/3' 
+2023-02-22 20:19:26.8396||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI)' with route pattern 'api/restaurant/{id}' is valid for the request path '/api/restaurant/3' 
+2023-02-22 20:19:26.8396||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI)' 
+2023-02-22 20:19:26.8396||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI)' 
+2023-02-22 20:19:26.8560||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "Restaurant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantAPI.Entities.Restaurant] Get(Int32) on controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI). 
+2023-02-22 20:19:26.8560||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-02-22 20:19:26.8560||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-02-22 20:19:26.8560||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-02-22 20:19:26.8560||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-02-22 20:19:26.8560||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2023-02-22 20:19:26.8560||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-02-22 20:19:26.8560||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-02-22 20:19:26.8560||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2023-02-22 20:19:26.8712||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2023-02-22 20:19:26.8712||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2023-02-22 20:19:26.8712||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2023-02-22 20:19:26.8712||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2023-02-22 20:19:26.8712||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2023-02-22 20:19:26.8712||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:26.8712||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:26.8712||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI) - Validation state: Valid 
+2023-02-22 20:19:26.8712||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI) with arguments (3) 
+2023-02-22 20:19:27.0058||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 128.4903ms. 
+2023-02-22 20:19:27.0058||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:27.0058||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:27.0058||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-02-22 20:19:27.0058||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-02-22 20:19:27.0058||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-02-22 20:19:27.0058||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-02-22 20:19:27.0058||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-02-22 20:19:27.0058||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2023-02-22 20:19:27.0058||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'RestaurantAPI.Models.RestaurantDto'. 
+2023-02-22 20:19:27.0058||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-02-22 20:19:27.0058||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI) in 150.2665ms 
+2023-02-22 20:19:27.0058||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI)' 
+2023-02-22 20:19:27.0058||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301" completed keep alive response. 
+2023-02-22 20:19:27.0058||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:5001/api/restaurant/3 application/json 118 - 200 - application/json;+charset=utf-8 168.9021ms 
+2023-02-22 20:19:27.0058||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301", Request id "0HMOL16JPP301:00000003": started reading request body. 
+2023-02-22 20:19:27.0058||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301", Request id "0HMOL16JPP301:00000003": done reading request body. 
+2023-02-22 20:19:30.1601||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:5001/api/restaurant/888 application/json 118 
+2023-02-22 20:19:30.1601||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/restaurant/888' 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI)' with route pattern 'api/restaurant/{id}' is valid for the request path '/api/restaurant/888' 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI)' 
+2023-02-22 20:19:30.1601||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI)' 
+2023-02-22 20:19:30.1601||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "Restaurant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[RestaurantAPI.Entities.Restaurant] Get(Int32) on controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI). 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-02-22 20:19:30.1601||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-02-22 20:19:30.1669||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2023-02-22 20:19:30.1669||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2023-02-22 20:19:30.1669||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2023-02-22 20:19:30.1669||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2023-02-22 20:19:30.1669||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2023-02-22 20:19:30.1669||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2023-02-22 20:19:30.1669||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:30.1669||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:30.1669||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI) - Validation state: Valid 
+2023-02-22 20:19:30.1669||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI) with arguments (888) 
+2023-02-22 20:19:30.1669||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 9.5424ms. 
+2023-02-22 20:19:30.1669||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:30.1669||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:19:30.1669||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.NotFoundResult. 
+2023-02-22 20:19:30.1846||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2023-02-22 20:19:30.1846||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.NotFoundResult. 
+2023-02-22 20:19:30.1846||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI) in 24.0308ms 
+2023-02-22 20:19:30.1846||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.RestaurantController.Get (RestaurantAPI)' 
+2023-02-22 20:19:30.1846||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301" completed keep alive response. 
+2023-02-22 20:19:30.1846||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:5001/api/restaurant/888 application/json 118 - 404 0 - 25.1740ms 
+2023-02-22 20:19:30.1846||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301", Request id "0HMOL16JPP301:00000004": started reading request body. 
+2023-02-22 20:19:30.1846||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301", Request id "0HMOL16JPP301:00000004": done reading request body. 
+2023-02-22 20:19:45.6389||INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-02-22 20:19:45.6389||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2023-02-22 20:19:45.6909||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301" disconnecting. 
+2023-02-22 20:19:45.6909||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL16JPP301" stopped. 
+2023-02-22 20:19:45.6909||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL16JPP301" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-02-22 20:19:45.6909||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2023-02-22 20:19:56.1639||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-02-22 20:19:58.2020||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 1D7128842A372518BC9372438520BD829EB0D5F5) 
+2023-02-22 20:19:58.2666||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2023-02-22 20:19:58.2666||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2023-02-22 20:19:58.2666||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly RestaurantAPI 
+2023-02-22 20:19:58.2666||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-02-22 20:19:58.2666||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-02-22 20:19:58.2666||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 20:19:58.2666||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 20:19:58.2666||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI 
+2023-02-22 20:19:58.2666||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-02-22 20:19:58.3638||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE6" accepted. 
+2023-02-22 20:19:58.3638||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL174OSVE6" received FIN. 
+2023-02-22 20:19:58.3842||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE6" started. 
+2023-02-22 20:19:58.4220||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-02-22 20:19:58.7147||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE6" stopped. 
+2023-02-22 20:19:58.7147||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL174OSVE6" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-02-22 20:19:59.0163||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" accepted. 
+2023-02-22 20:19:59.0163||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" started. 
+2023-02-22 20:19:59.1140||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection "0HMOL174OSVE7" established using the following protocol: Tls12 
+2023-02-22 20:19:59.1498||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE 
+2023-02-22 20:19:59.1540||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0 
+2023-02-22 20:19:59.1540||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" received SETTINGS frame for stream ID 0 with length 30 and flags NONE 
+2023-02-22 20:19:59.1540||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK 
+2023-02-22 20:19:59.1540||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0 
+2023-02-22 20:19:59.1540||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" received HEADERS frame for stream ID 1 with length 471 and flags END_STREAM, END_HEADERS, PRIORITY 
+2023-02-22 20:19:59.2042||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" received SETTINGS frame for stream ID 0 with length 0 and flags ACK 
+2023-02-22 20:19:59.2305||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/weatherforecast - - 
+2023-02-22 20:19:59.2917||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-02-22 20:19:59.2917||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-02-22 20:19:59.3555||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/weatherforecast' 
+2023-02-22 20:19:59.3555||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-02-22 20:19:59.3853||TRACE|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" sending HEADERS frame for stream ID 1 with length 45 and flags END_STREAM, END_HEADERS 
+2023-02-22 20:19:59.3853||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 404 0 - 164.9752ms 
+2023-02-22 20:20:01.8380||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE8" accepted. 
+2023-02-22 20:20:01.8385||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE8" started. 
+2023-02-22 20:20:01.8385||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL174OSVE8" received FIN. 
+2023-02-22 20:20:01.8385||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE9" accepted. 
+2023-02-22 20:20:01.8385||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE9" started. 
+2023-02-22 20:20:01.8385||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|182_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-02-22 20:20:01.8385||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE8" stopped. 
+2023-02-22 20:20:01.8385||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL174OSVE8" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-02-22 20:20:01.8385||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection "0HMOL174OSVE9" established using the following protocol: Tls12 
+2023-02-22 20:20:01.8567||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:5001/api/restaurant application/json 118 
+2023-02-22 20:20:01.8567||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-02-22 20:20:01.8567||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/restaurant' 
+2023-02-22 20:20:01.8567||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' with route pattern 'api/restaurant' is valid for the request path '/api/restaurant' 
+2023-02-22 20:20:01.8567||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' 
+2023-02-22 20:20:01.8567||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' 
+2023-02-22 20:20:01.8721||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2023-02-22 20:20:01.8875||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Restaurant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RestaurantAPI.Models.RestaurantDto]] GetAll() on controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI). 
+2023-02-22 20:20:01.8875||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-02-22 20:20:01.8875||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-02-22 20:20:01.8875||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2023-02-22 20:20:01.8875||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-02-22 20:20:01.8875||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2023-02-22 20:20:01.8875||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-02-22 20:20:02.1353||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller RestaurantAPI.Controllers.RestaurantController (RestaurantAPI) 
+2023-02-22 20:20:02.1353||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:20:02.1353||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:20:02.1353||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI) - Validation state: Valid 
+2023-02-22 20:20:28.1076||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL174OSVE7" received FIN. 
+2023-02-22 20:20:28.1514||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:20:28.1514||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-02-22 20:20:28.1514||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" is closed. The last processed stream ID was 1. 
+2023-02-22 20:20:28.1514||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL174OSVE7" sending FIN because: "The client closed the connection." 
+2023-02-22 20:20:28.1514||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI) in 26264.6277ms 
+2023-02-22 20:20:28.1514||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE7" stopped. 
+2023-02-22 20:20:28.1514||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'RestaurantAPI.Controllers.RestaurantController.GetAll (RestaurantAPI)' 
+2023-02-22 20:20:28.2815||ERROR|RestaurantAPI.Middleware.ErrorHandlingMiddleware|Cannot open database "estaurantDB" requested by the login. The login failed.
+Login failed for user 'LAPTOP-GFSOO2BE\mariu'. Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "estaurantDB" requested by the login. The login failed.
+Login failed for user 'LAPTOP-GFSOO2BE\mariu'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at RestaurantAPI.Services.RestaurantService.GetAll() in C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\Services\RestaurantService.cs:line 70
+   at RestaurantAPI.Controllers.RestaurantController.GetAll() in C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\Controllers\RestaurantController.cs:line 72
+   at lambda_method7(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at RestaurantAPI.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\mariu\OneDrive\Pulpit\c#\Udemy\ASP .NET\RestaurantAPI\RestaurantAPI\Middleware\ErrorHandlingMiddleware.cs:line 23
+ClientConnectionId:cd901e83-9070-414b-a123-cea17c8d834d
+Error Number:4060,State:1,Class:11
+2023-02-22 20:20:28.3019||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE9" completed keep alive response. 
+2023-02-22 20:20:28.3019||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:5001/api/restaurant application/json 118 - 500 - - 26448.8037ms 
+2023-02-22 20:20:28.3019||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE9", Request id "0HMOL174OSVE9:00000002": started reading request body. 
+2023-02-22 20:20:28.3019||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE9", Request id "0HMOL174OSVE9:00000002": done reading request body. 
+2023-02-22 20:21:52.9488||INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-02-22 20:21:52.9488||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2023-02-22 20:21:53.0245||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE9" disconnecting. 
+2023-02-22 20:21:53.0245||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL174OSVE9" stopped. 
+2023-02-22 20:21:53.0245||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL174OSVE9" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-02-22 20:21:53.0289||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
