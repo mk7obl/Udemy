@@ -12,7 +12,7 @@ namespace RestaurantAPI.Entities
     {
         //private string _connectionString = "Server=(localdb)\\mssqllocaldb;Database=RestaurantDb;Trusted_Connection=True;";
 
-        private string _connectionString = "Server=.\\SQLExpress;Database=estaurantDB;Trusted_Connection=Yes;";
+        private string _connectionString = "Server=.\\SQLExpress;Database=RestaurantDB;Trusted_Connection=Yes;";
         public DbSet<Restaurant> Restaurants { get; set; }
         
         public DbSet<Address> Addresses { get; set; }
