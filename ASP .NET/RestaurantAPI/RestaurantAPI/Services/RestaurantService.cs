@@ -4,6 +4,7 @@ using RestaurantAPI.Entities;
 using RestaurantAPI.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace RestaurantAPI.Services
         IEnumerable <RestaurantDto> GetAll();
         int Create(CreateRestaurantDto dto);
         bool Delete(int id);
+        bool Update(int id, UpdateRestaurantDto dto);
     }
     public class RestaurantService : IRestaurantService
     {
@@ -76,6 +78,26 @@ namespace RestaurantAPI.Services
             _dbContext.SaveChanges();
 
             return restaurant.Id;
+        }
+
+        public bool Update(int id, UpdateRestaurantDto dto)
+        {
+
+            var restaurant = _dbContext.Restaurants.Where(r => r.Id == id).FirstOrDefault<Restaurant>();
+
+            if (restaurant != null)
+            {
+                restaurant.Name = dto.Name;
+                restaurant.Description = dto.Description;
+                restaurant.HasDelivery = dto.HasDelivery;
+                _dbContext.SaveChanges();
+            }
+
+            else
+                return false;
+
+            var restaurantDto = _mapper.Map<RestaurantDto>(restaurant);
+            return true;
         }
     }
 }
