@@ -8,6 +8,8 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NLog.Web;
+using Microsoft.Extensions.Logging;
 
 namespace RestaurantAPI.Services
 {
@@ -24,9 +26,19 @@ namespace RestaurantAPI.Services
     {
         private readonly RestaurantDbContext _dbContext;
         private readonly IMapper _mapper;
+        private readonly ILogger<RestaurantService> _logger;
+
+        public RestaurantService(RestaurantDbContext dbContext, IMapper mapper, ILogger<RestaurantService> logger)
+        {
+            _dbContext = dbContext;
+            _mapper = mapper;
+            _logger = logger;
+        }
 
         public bool Delete(int id)
         {
+            _logger.LogError($"Restaurant with id: {id} DELETE action invoked");
+
             var restaurant = _dbContext
                .Restaurants
                .FirstOrDefault(r => r.Id == id);
@@ -37,12 +49,6 @@ namespace RestaurantAPI.Services
             _dbContext.Restaurants.Remove(restaurant);
             _dbContext.SaveChanges();
             return true;
-        }
-
-        public RestaurantService(RestaurantDbContext dbContext, IMapper mapper)
-        {
-            _dbContext = dbContext;
-            _mapper= mapper;
         }
 
         public RestaurantDto GetById (int id)
