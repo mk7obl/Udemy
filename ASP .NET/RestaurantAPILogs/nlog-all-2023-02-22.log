@@ -1287,3 +1287,6 @@ Error Number:4060,State:1,Class:11
 2023-02-22 20:48:24.0826||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL1LQDVUF8" is closed. The last processed stream ID was 3. 
 2023-02-22 20:48:24.0826||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOL1LQDVUF8" sending FIN because: "The client closed the connection." 
 2023-02-22 20:48:24.0986||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMOL1LQDVUF8" stopped. 
+2023-02-22 22:03:54.8471||INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2023-02-22 22:03:54.8471||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2023-02-22 22:03:54.9156||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
