@@ -21,6 +21,7 @@ namespace RestaurantAPI.Services
         int Create(int RestaurantId, CreateDishDto dto);
         DishDto GetById(int restaurantId, int dishId);
         void Delete(int restaurantId, int dishId);
+        void RemoveAll(int restaurantId);
 
     }
     public class DishService : IDishService
@@ -38,12 +39,7 @@ namespace RestaurantAPI.Services
 
         public int Create(int restaurantId, CreateDishDto dto)
         {
-            var restaurant = _context.Restaurants.FirstOrDefault(r => r.Id == restaurantId);
-
-            if (restaurant is null)
-            {
-                throw new NotFoundException("Restaurant not found");
-            }
+            var restaurant = GetRestaurantById(restaurantId);
 
             var dishEntity = _mapper.Map<Dish>(dto);
 
@@ -57,15 +53,7 @@ namespace RestaurantAPI.Services
 
         public IEnumerable<DishDto> GetAll(int restaurantId)
         {
-            var restaurant = _context
-                .Restaurants
-                .Include(r => r.Dishes)
-                .FirstOrDefault(r=>r.Id==restaurantId);
-
-            if (restaurant is null)
-            {
-                throw new NotFoundException("Restaurant not found");
-            }
+            var restaurant = GetRestaurantById(restaurantId);
 
             var dishDtos = _mapper.Map<List<DishDto>>(restaurant.Dishes);
 
@@ -74,12 +62,7 @@ namespace RestaurantAPI.Services
 
         public DishDto GetById(int restaurantId, int dishId)
         {
-            var restaurant = _context
-                .Restaurants
-                .FirstOrDefault(r=>r.Id== restaurantId);
-
-            if (restaurant is null)
-                throw new NotFoundException("Restaurant not found");
+            var restaurant = GetRestaurantById(restaurantId);
 
             var dish = _context
                 .Dishes
@@ -98,10 +81,7 @@ namespace RestaurantAPI.Services
         {
             var restaurant = _context
                 .Restaurants
-                .FirstOrDefault(r=>r.Id== restaurantId);
-
-            if (restaurant is null)
-                throw new NotFoundException("Restaurant not found");
+                .FirstOrDefault(r => r.Id == restaurantId);
 
             var dish = _context
                 .Dishes
@@ -115,7 +95,32 @@ namespace RestaurantAPI.Services
             _context.Remove(dish);
             _context.SaveChanges();
 
-            _logger.LogError($"Dish with ID {dishId} deleted");
+            _logger.LogError($"Dish with ID {dishId} deleted from restaurant with ID {restaurantId}");
+        }
+
+        public void RemoveAll(int restaurantId)
+        {
+
+            var restaurant = GetRestaurantById(restaurantId);
+
+            _context.RemoveRange(restaurant.Dishes);
+            _context.SaveChanges();
+
+            _logger.LogError($"Dishes removed from restaurant with ID {restaurantId}");
+
+        }
+
+        private Restaurant GetRestaurantById(int restaurantId)
+        {
+            var restaurant = _context
+                .Restaurants
+                .Include(r => r.Dishes)
+                .FirstOrDefault(r => r.Id == restaurantId);
+
+            if (restaurant is null)
+                throw new NotFoundException("Restaurant not found");
+
+            return restaurant;
         }
     }
 }

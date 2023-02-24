@@ -44,11 +44,19 @@ namespace RestaurantAPI.Controllers
             return Ok(dish);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete]
+        public ActionResult Delete([FromRoute]int restaurantId)
+        {
+            _dishService.RemoveAll(restaurantId);
+
+            return NoContent();
+        }
+
+        [HttpDelete("{dishId}")]
         public ActionResult Delete([FromRoute]int restaurantId, [FromRoute]int dishId)
         {
             _dishService.Delete(restaurantId, dishId);
-            return NotFound();
+            return NoContent();
         }
 
     }
