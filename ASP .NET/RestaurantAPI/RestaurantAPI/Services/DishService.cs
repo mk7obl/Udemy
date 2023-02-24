@@ -17,9 +17,9 @@ namespace RestaurantAPI.Services
 
     public interface IDishService
     {
-        IEnumerable<DishDto> GetAll();
+        IEnumerable<DishDto> GetAll(int restaurantId);
         int Create(int RestaurantId, CreateDishDto dto);
-        DishDto GetDish(int id);
+        DishDto GetById(int restaurantId, int dishId);
         void Delete(int id);
 
     }
@@ -55,35 +55,43 @@ namespace RestaurantAPI.Services
             return dishEntity.Id;
         }
 
-        public IEnumerable<DishDto> GetAll()
+        public IEnumerable<DishDto> GetAll(int restaurantId)
         {
-            var dishes = _context
-                .Dishes
-                .ToList();
+            var restaurant = _context
+                .Restaurants
+                .Include(r => r.Dishes)
+                .FirstOrDefault();
 
-            if (dishes is null)
+            if (restaurant is null)
             {
                 throw new NotFoundException("Dishes not found");
             }
 
-            var dishDtos = _mapper.Map<List<DishDto>>(dishes);
+            var dishDtos = _mapper.Map<List<DishDto>>(restaurant.Dishes);
 
             return dishDtos;
         }
 
-        public DishDto GetDish(int id)
+        public DishDto GetById(int restaurantId, int dishId)
         {
+            var restaurant = _context
+                .Restaurants
+                .FirstOrDefault(r=>r.Id== restaurantId);
+
+            if (restaurant is null)
+                throw new NotFoundException("Restaurant not found");
+
             var dish = _context
                 .Dishes
-                .FirstOrDefault(r => r.Id == id);
+                .FirstOrDefault(r => r.Id == dishId);
 
-            if (dish is null)
+            if (dish is null || dish.RestaurantId != restaurantId)
             {
                 throw new NotFoundException("Restaurant not found");
             }
 
-            var result = _mapper.Map<DishDto>(dish);
-            return result;
+            var dishDto = _mapper.Map<DishDto>(dish);
+            return dishDto;
         }
 
         public void Delete(int id)
