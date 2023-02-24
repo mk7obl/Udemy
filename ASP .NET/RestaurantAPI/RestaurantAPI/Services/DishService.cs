@@ -20,7 +20,7 @@ namespace RestaurantAPI.Services
         IEnumerable<DishDto> GetAll(int restaurantId);
         int Create(int RestaurantId, CreateDishDto dto);
         DishDto GetById(int restaurantId, int dishId);
-        void Delete(int id);
+        void Delete(int restaurantId, int dishId);
 
     }
     public class DishService : IDishService
@@ -60,11 +60,11 @@ namespace RestaurantAPI.Services
             var restaurant = _context
                 .Restaurants
                 .Include(r => r.Dishes)
-                .FirstOrDefault();
+                .FirstOrDefault(r=>r.Id==restaurantId);
 
             if (restaurant is null)
             {
-                throw new NotFoundException("Dishes not found");
+                throw new NotFoundException("Restaurant not found");
             }
 
             var dishDtos = _mapper.Map<List<DishDto>>(restaurant.Dishes);
@@ -87,22 +87,27 @@ namespace RestaurantAPI.Services
 
             if (dish is null || dish.RestaurantId != restaurantId)
             {
-                throw new NotFoundException("Restaurant not found");
+                throw new NotFoundException("Dish not found");
             }
 
             var dishDto = _mapper.Map<DishDto>(dish);
             return dishDto;
         }
 
-        public void Delete(int id)
+        public void Delete(int restaurantId, int dishId)
         {
-            _logger.LogError($"Dish with ID {id} deleted");
+            var restaurant = _context
+                .Restaurants
+                .FirstOrDefault(r=>r.Id== restaurantId);
+
+            if (restaurant is null)
+                throw new NotFoundException("Restaurant not found");
 
             var dish = _context
                 .Dishes
-                .FirstOrDefault(r => r.Id == id);
+                .FirstOrDefault(r => r.Id == dishId);
 
-            if (dish is null)
+            if (dish is null || dish.RestaurantId != restaurantId)
             {
                 throw new NotImplementedException("Dish not found");
             }
@@ -110,6 +115,7 @@ namespace RestaurantAPI.Services
             _context.Remove(dish);
             _context.SaveChanges();
 
+            _logger.LogError($"Dish with ID {dishId} deleted");
         }
     }
 }

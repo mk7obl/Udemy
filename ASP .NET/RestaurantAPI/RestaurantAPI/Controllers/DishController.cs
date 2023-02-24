@@ -14,12 +14,14 @@ namespace RestaurantAPI.Controllers
     [ApiController]
     public class DishController : ControllerBase
     {
+
         private readonly IDishService _dishService;
 
         public DishController(IDishService dishService)
         {
             _dishService = dishService;
         }
+
         [HttpPost]
         public ActionResult Post([FromRoute]int restaurantId,[FromBody] CreateDishDto dto)
         {
@@ -29,7 +31,7 @@ namespace RestaurantAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<DishDto>> GetAll([FromRoute]int restaurantId)
+        public ActionResult<List<DishDto>> GetAll([FromRoute]int restaurantId)
         {
             var result = _dishService.GetAll(restaurantId);
             return Ok(result);
@@ -43,10 +45,11 @@ namespace RestaurantAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public ActionResult Delete([FromRoute]int id)
+        public ActionResult Delete([FromRoute]int restaurantId, [FromRoute]int dishId)
         {
-            _dishService.Delete(id);
+            _dishService.Delete(restaurantId, dishId);
             return NotFound();
         }
+
     }
 }
