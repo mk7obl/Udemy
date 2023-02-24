@@ -27,5 +27,23 @@ namespace RestaurantAPI.Controllers
 
             return Created($"api/{restaurantId}/dish/{newDishId}", null);
         }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<DishDto>> GetAll()
+        {
+            var dishDtos = _dishService.GetAll();
+            
+            return Ok(dishDtos);
+        }
+
+        [Route("{dishId}")]
+        [HttpGet]
+        public ActionResult GetDish([FromRoute]int id)
+        {
+            var dishDto = _dishService.GetDish(id);
+
+            return Ok(dishDto);
+        }
+
     }
 }

@@ -17,18 +17,24 @@ namespace RestaurantAPI.Services
 
     public interface IDishService
     {
+        IEnumerable <DishDto> GetAll();
         int Create(int RestaurantId, CreateDishDto dto);
+        DishDto GetDish(int id);
+        //IEnumerable<DishDto> GetAll();
     }
     public class DishService : IDishService
     {
         private readonly RestaurantDbContext _context;
         private readonly IMapper _mapper;
+        private readonly ILogger _logger;
 
-        public DishService(RestaurantDbContext context, IMapper mapper)
+        public DishService(RestaurantDbContext context, IMapper mapper, ILogger logger)
         {
             _context = context;
             _mapper = mapper;
+            _logger = logger;
         }
+
         public int Create(int restaurantId, CreateDishDto dto)
         {
             var restaurant = _context.Restaurants.FirstOrDefault(r => r.Id == restaurantId);
@@ -47,5 +53,56 @@ namespace RestaurantAPI.Services
 
             return dishEntity.Id;
         }
+
+        public IEnumerable<DishDto> GetAll()
+        {
+            var dishes = _context
+                .Dishes
+                .ToList();
+
+            if (dishes is null)
+            {
+                throw new NotFoundException("Dishes not found");
+            }
+
+            var dishDtos = _mapper.Map<List<DishDto>>(dishes);
+
+            return dishDtos;
+        }
+
+        public DishDto GetDish(int id)
+        {
+            var dish = _context
+                .Dishes
+                .FirstOrDefault(r => r.Id == id);
+
+            if (dish is null)
+            {
+                throw new NotFoundException("Dish not found");
+            }
+
+            var dishDto = _mapper.Map<DishDto>(dish);
+            return dishDto;
+        }
+
+        public void Delete(int id)
+        {
+            _logger.LogError($"Dish with ID {id} deleted");
+
+            var dish = _context
+                .Dishes
+                .FirstOrDefault(r=>r.Id == id);
+
+            if (dish is null)
+            {
+                throw new NotImplementedException("Dish not found");
+            }
+
+            _context.Remove(dish);
+            _context.SaveChanges();
+
+        }
+
+
     }
 }
