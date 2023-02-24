@@ -17,18 +17,19 @@ namespace RestaurantAPI.Services
 
     public interface IDishService
     {
-        IEnumerable <DishDto> GetAll();
+        IEnumerable<DishDto> GetAll();
         int Create(int RestaurantId, CreateDishDto dto);
         DishDto GetDish(int id);
-        //IEnumerable<DishDto> GetAll();
+        void Delete(int id);
+
     }
     public class DishService : IDishService
     {
         private readonly RestaurantDbContext _context;
         private readonly IMapper _mapper;
-        private readonly ILogger _logger;
+        private readonly ILogger<DishService> _logger;
 
-        public DishService(RestaurantDbContext context, IMapper mapper, ILogger logger)
+        public DishService(RestaurantDbContext context, IMapper mapper, ILogger<DishService> logger)
         {
             _context = context;
             _mapper = mapper;
@@ -78,11 +79,11 @@ namespace RestaurantAPI.Services
 
             if (dish is null)
             {
-                throw new NotFoundException("Dish not found");
+                throw new NotFoundException("Restaurant not found");
             }
 
-            var dishDto = _mapper.Map<DishDto>(dish);
-            return dishDto;
+            var result = _mapper.Map<DishDto>(dish);
+            return result;
         }
 
         public void Delete(int id)
@@ -91,7 +92,7 @@ namespace RestaurantAPI.Services
 
             var dish = _context
                 .Dishes
-                .FirstOrDefault(r=>r.Id == id);
+                .FirstOrDefault(r => r.Id == id);
 
             if (dish is null)
             {
@@ -102,7 +103,5 @@ namespace RestaurantAPI.Services
             _context.SaveChanges();
 
         }
-
-
     }
 }

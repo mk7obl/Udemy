@@ -36,8 +36,7 @@ namespace RestaurantAPI.Controllers
             return Ok(dishDtos);
         }
 
-        [Route("{dishId}")]
-        [HttpGet]
+        [HttpGet("{id}")]
         public ActionResult GetDish([FromRoute]int id)
         {
             var dishDto = _dishService.GetDish(id);
@@ -45,5 +44,12 @@ namespace RestaurantAPI.Controllers
             return Ok(dishDto);
         }
 
+        //[Route("{id}")]
+        [HttpDelete("{id}")]
+        public ActionResult Delete([FromRoute]int id)
+        {
+            _dishService.Delete(id);
+            return NotFound();
+        }
     }
 }
