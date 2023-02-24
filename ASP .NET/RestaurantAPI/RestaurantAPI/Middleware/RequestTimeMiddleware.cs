@@ -29,11 +29,11 @@ namespace RestaurantAPI.Middleware
 
             var elapsedTime = _stopWatch.ElapsedMilliseconds;
 
-            if (elapsedTime/1000 > 4)
+            if (elapsedTime / 1000 > 4)
             {
                 var message = $"Request [{context.Request.Method}] at {context.Request.Path} took {elapsedTime} ms";
 
-                _logger.LogTrace(message);
+                _logger.LogInformation(message);
             }
 
 
