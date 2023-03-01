@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "GLbJTQ8/kcwfiZ/75IhrRqOaHQ97PQZxnJ9vpFy7Ugr6f7mfPUvBXuGdZXo4lpPe4goHL5sqxe3AlanRsETb7Q==",
+  "dgSpecHash": "BaMvSa/WxFCXdIblhNdYWNjvAutni2kTsAQK2LsV535IYdNshKnU0K16dMmeKq4SA6+3c8xkfUU/ZWdGH8//Mg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Udemy\\ASP .NET\\RestaurantAPI\\RestaurantAPI\\RestaurantAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mariu\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\mariu\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
+    "C:\\Users\\mariu\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
+    "C:\\Users\\mariu\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.4.0\\fluentvalidation.aspnetcore.9.4.0.nupkg.sha512",
+    "C:\\Users\\mariu\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.4.0\\fluentvalidation.dependencyinjectionextensions.9.4.0.nupkg.sha512",
     "C:\\Users\\mariu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mariu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mariu\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
