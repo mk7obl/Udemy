@@ -9,11 +9,10 @@ using RestaurantAPI.Services;
 
 namespace RestaurantAPI.Controllers
 {
-    [Route("api/accounts")]
+    [Route("api/account")]
     [ApiController]
     public class ReastaurantController : ControllerBase
     {
-        private readonly DbContext _dbcontext;
         private readonly IAccountService _accountService;
 
         public ReastaurantController(IAccountService accountService)
