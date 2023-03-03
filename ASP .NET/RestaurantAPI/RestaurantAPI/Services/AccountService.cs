@@ -52,8 +52,8 @@ namespace RestaurantAPI.Services
         public string GenerateJwt(LoginDto dto)
         {
             var user = _context.Users
-                .Include(u=>u.Role)
-                .FirstOrDefault(u=>u.Email == dto.Email);
+                .Include(u => u.Role)
+                .FirstOrDefault(u => u.Email == dto.Email);
 
             if (user is null)
             {
@@ -77,6 +77,14 @@ namespace RestaurantAPI.Services
 
             };
 
+            if (!string.IsNullOrEmpty(user.Nationality))
+            {
+
+                claims.Add(
+                    new Claim("Nationality", user.Nationality)
+                    );
+            }
+
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
             var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var expires = DateTime.Now.AddDays(_authenticationSettings.JwtExpireDays);
@@ -85,7 +93,7 @@ namespace RestaurantAPI.Services
                 _authenticationSettings.JwtIssuer,
                 claims,
                 expires: expires,
-                signingCredentials:cred);
+                signingCredentials: cred);
 
             var tokenHandler = new JwtSecurityTokenHandler();
             return tokenHandler.WriteToken(token);
