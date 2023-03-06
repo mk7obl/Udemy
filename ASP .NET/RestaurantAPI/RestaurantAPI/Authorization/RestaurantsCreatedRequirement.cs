@@ -6,11 +6,11 @@ namespace RestaurantAPI.Authorization
 
     public class RestaurantsCreatedRequirement : IAuthorizationRequirement
     {
-        public int RestaurantsCreated { get; set; }
+        public int MinimumRestaurantsCreated { get; set; }
 
-        public RestaurantsCreatedRequirement(int restaurantsCreated)
+        public RestaurantsCreatedRequirement(int minimumRestaurantsCreated)
         {
-            RestaurantsCreated = restaurantsCreated;
+            MinimumRestaurantsCreated = minimumRestaurantsCreated;
         }
     }
 }
