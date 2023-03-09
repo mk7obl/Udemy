@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "n6rDJ8gm65DcAcjouEP3Uj4REMlga6LpJi3wyIAWUGs=",
+  "Source": "RestaurantAPI",
+  "BasePath": "_content/RestaurantAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RestaurantAPI\\wwwroot",
+      "Source": "RestaurantAPI",
+      "ContentRoot": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Udemy\\ASP .NET\\RestaurantAPI\\RestaurantAPI\\wwwroot\\",
+      "BasePath": "_content/RestaurantAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Udemy\\ASP .NET\\RestaurantAPI\\RestaurantAPI\\wwwroot\\sample-file.txt",
+      "SourceId": "RestaurantAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Udemy\\ASP .NET\\RestaurantAPI\\RestaurantAPI\\wwwroot\\",
+      "BasePath": "_content/RestaurantAPI",
+      "RelativePath": "sample-file.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample-file.txt"
+    }
+  ]
+}

@@ -12,7 +12,7 @@ using NLog.Web;
 using Microsoft.Extensions.Logging;
 using RestaurantAPI.Exceptions;
 
-namespace RestaurantAPI.Services
+namespace RestaurantAPI.builder.Services
 {
 
     public interface IDishService

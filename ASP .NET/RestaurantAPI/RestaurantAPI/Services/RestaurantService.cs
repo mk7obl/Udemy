@@ -16,7 +16,7 @@ using System.Security.Claims;
 using RestaurantAPI.Authorization;
 using System.Linq.Expressions;
 
-namespace RestaurantAPI.Services
+namespace RestaurantAPI.builder.Services
 {
 
     public interface IRestaurantService

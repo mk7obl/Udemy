@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Http;
 using System;
 using System.Security.Claims;
 
-namespace RestaurantAPI.Services
+namespace RestaurantAPI.builder.Services
 {
 
     public interface IUserContextService

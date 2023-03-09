@@ -11,7 +11,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
-namespace RestaurantAPI.Services
+namespace RestaurantAPI.builder.Services
 {
     public interface IAccountService
     {

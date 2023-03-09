@@ -5,7 +5,7 @@ using System.Linq;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using RestaurantAPI.Models;
-using RestaurantAPI.Services;
+using RestaurantAPI.builder.Services;
 
 namespace RestaurantAPI.Controllers
 {
